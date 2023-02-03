@@ -1,0 +1,50 @@
+<html lang="en">
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta charset="UTF-8">
+		<title>Search</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header id="header">
+                <h1> Felipes Number Converter</h1>
+			</header>
+			<nav id="nav">
+				<div>
+					<select id="dropdown">
+						<option selected>Zahlensystem</option>
+						<option value="dezimal"> Dezimal</option>
+						<option value="binaer"> Binär</option>
+						<option value="hexa">Hexa</option>
+					</select>
+				</div>
+                <div class="nav-items">
+                    <button class="darkbutton"> Toggle theme </button>
+                </div>
+				
+			</nav>
+			<main id="main"class="main">
+				<div class="main-items">
+                    <form class="form1" ><label><h1>Binär</h1></label><input id="binaer" readonly></input></form>
+                    <form class="form1" ><label><h1>Hexadecimal</h1></label><input id="hexadezimal" readonly></input></form>
+                    <form class="form1" ><label><h1>Dezimalsystem</h1></label><input id="dezimal" type="number" readonly></input> </form>
+                </div>
+
+					<button class="confirm-btn" id="enter"> enter </button>  
+			</main>
+			<footer class="footer" id="footer">
+				<p class="copyright">© Thikalvannan Vincent Robert</p>
+				<p class="copyright">© Elvis Felipe Bruhin</p>
+				<p class="copyright">© Nikola Manojlovic</p>
+
+			</footer>
+		</div>
+		<script src="./sites.js" type="module"> </script>
+		<script src="./binaer.js" type="module"> </script>
+		<script src="./dezimal.js" type="module"> </script>
+		<script src="./hexa.js" type="module"> </script>
+		
+	</body>
+</html>
